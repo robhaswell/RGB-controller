@@ -1,0 +1,35 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1N5819HW-7-F
+D Diode Schottky 1A 40V SOD123 Diodes Inc 1N5819HW-7-F, SMT Schottky Diode, 40V 1A, 2-Pin SOD-123
+F http://uk.rs-online.com/web/p/products/7082197P
+$ENDCMP
+#
+$CMP AMP_Mate-N-Lok_Power
+D Pin & Socket Connectors CONN PCM 4 POS TIN
+F http://uk.rs-online.com/web/p/products/0471430
+$ENDCMP
+#
+$CMP ESP32_DevKit_V1_DOIT
+D 32-bit microcontroller module with WiFi and Bluetooth
+K ESP32-WROOM-32 WiFi and Bluetooth microcontroller
+F https://aliexpress.com/item/32864722159.html
+$ENDCMP
+#
+$CMP RGB_3_pin
+D 3-pin ARGB header
+K connector
+F ~
+$ENDCMP
+#
+$CMP SN74HCT245DBR
+D Texas Instruments SN74HCT245DBR, Bus Transceiver, 8-Bit Non-Inverting CMOS, 5V, 20-Pin SSOP
+F http://uk.rs-online.com/web/p/products/6628291P
+$ENDCMP
+#
+$CMP SN74HCT245N
+D Octal Bus Transceivers With 3-State Outputs
+F http://uk.rs-online.com/web/p/products/0526228
+$ENDCMP
+#
+#End Doc Library
