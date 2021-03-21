@@ -1,6 +1,24 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Device_C_Small
+#
+DEF Device_C_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Mechanical_MountingHole
 #
 DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
@@ -13,28 +31,6 @@ $FPLIST
 $ENDFPLIST
 DRAW
 C 0 0 50 0 1 50 N
-ENDDRAW
-ENDDEF
-#
-# local_1N5819HW-7-F
-#
-DEF local_1N5819HW-7-F D 0 30 Y Y 1 F N
-F0 "D" 450 200 50 H V L CNN
-F1 "local_1N5819HW-7-F" 450 100 50 H V L CNN
-F2 "SOD3716X145N" 450 0 50 H I L CNN
-F3 "http://uk.rs-online.com/web/p/products/7082197P" 450 -100 50 H I L CNN
-F4 "Diode Schottky 1A 40V SOD123 Diodes Inc 1N5819HW-7-F, SMT Schottky Diode, 40V 1A, 2-Pin SOD-123" 450 -200 50 H I L CNN "Description"
-F5 "1.45" 450 -300 50 H I L CNN "Height"
-F6 "7082197P" 450 -400 50 H I L CNN "RS Part Number"
-F7 "http://uk.rs-online.com/web/p/products/7082197P" 450 -500 50 H I L CNN "RS Price/Stock"
-F8 "Diodes Inc." 450 -600 50 H I L CNN "Manufacturer_Name"
-F9 "1N5819HW-7-F" 450 -700 50 H I L CNN "Manufacturer_Part_Number"
-F10 "71028084" 450 -800 50 H I L CNN "Allied_Number"
-DRAW
-P 2 0 1 6 200 100 200 -100 N
-P 4 0 1 10 200 0 400 100 400 -100 200 0 F
-X ~ 1 0 0 200 R 50 50 0 0 P
-X ~ 2 600 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
@@ -161,6 +157,21 @@ X A5 6 0 -500 200 R 50 50 0 0 P
 X A6 7 0 -600 200 R 50 50 0 0 P
 X A7 8 0 -700 200 R 50 50 0 0 P
 X A8 9 0 -800 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# power_+12V
+#
+DEF power_+12V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+12V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +12V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
