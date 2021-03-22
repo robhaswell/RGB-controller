@@ -32,4 +32,9 @@ D Octal Bus Transceivers With 3-State Outputs
 F http://uk.rs-online.com/web/p/products/0526228
 $ENDCMP
 #
+$CMP SN74HCT245PWR
+D Octal Bus Transceivers With 3-State Outputs
+F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hct245
+$ENDCMP
+#
 #End Doc Library

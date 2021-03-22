@@ -55,8 +55,6 @@ F 3 "" H 3250 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 2600 3650 2600
-Wire Wire Line
 	3550 6100 2250 6100
 Wire Wire Line
 	2250 6100 2250 6000
@@ -67,13 +65,8 @@ Wire Wire Line
 Connection ~ 2250 6100
 Wire Wire Line
 	4650 4500 4750 4500
-Connection ~ 3650 2600
-Wire Wire Line
-	3650 2600 4650 2600
 Connection ~ 4650 2600
 Connection ~ 4750 2700
-Wire Wire Line
-	4650 4400 4650 4100
 Wire Wire Line
 	5300 4050 5500 4050
 Wire Wire Line
@@ -261,7 +254,7 @@ U 1 1 605872F5
 P 3400 1550
 F 0 "J9" H 4028 1446 50  0000 L CNN
 F 1 "AMP_Mate-N-Lok_Power" H 4028 1355 50  0000 L CNN
-F 2 "local:AMP_Mate_N_Lok" H 4050 1650 50  0001 L CNN
+F 2 "local:TE_MATE-N-LOK_350211-1_1x04_P5.08mm_Vertical" H 4050 1650 50  0001 L CNN
 F 3 "http://uk.rs-online.com/web/p/products/0471430" H 4050 1550 50  0001 L CNN
 F 4 "Pin & Socket Connectors CONN PCM 4 POS TIN" H 4050 1450 50  0001 L CNN "Description"
 F 5 "10.29" H 4050 1350 50  0001 L CNN "Height"
@@ -529,23 +522,6 @@ Wire Wire Line
 	4900 4700 4650 4700
 Wire Wire Line
 	4650 4600 4900 4600
-$Comp
-L local:SN74HCT245DBR IC1
-U 1 1 60573DD7
-P 3650 4400
-F 0 "IC1" H 4150 4665 50  0000 C CNN
-F 1 "SN74HCT245DBR" H 4150 4574 50  0000 C CNN
-F 2 "local:SN74HCT245DBR" H 4500 4500 50  0001 L CNN
-F 3 "http://uk.rs-online.com/web/p/products/6628291P" H 4500 4400 50  0001 L CNN
-F 4 "Texas Instruments SN74HCT245DBR, Bus Transceiver, 8-Bit Non-Inverting CMOS, 5V, 20-Pin SSOP" H 4500 4300 50  0001 L CNN "Description"
-F 5 "2" H 4500 4200 50  0001 L CNN "Height"
-F 6 "6628291P" H 4500 4100 50  0001 L CNN "RS Part Number"
-F 7 "http://uk.rs-online.com/web/p/products/6628291P" H 4500 4000 50  0001 L CNN "RS Price/Stock"
-F 8 "Texas Instruments" H 4500 3900 50  0001 L CNN "Manufacturer_Name"
-F 9 "SN74HCT245DBR" H 4500 3800 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3650 4400
-	1    0    0    -1  
-$EndComp
 Text Label 3450 5200 0    50   ~ 0
 A8
 Text Label 3450 4500 0    50   ~ 0
@@ -589,22 +565,7 @@ Connection ~ 3550 2700
 Wire Wire Line
 	3250 2700 3550 2700
 Wire Wire Line
-	3550 2700 3550 5300
-Wire Wire Line
-	3650 4400 3650 2600
-$Comp
-L Device:C_Small C1
-U 1 1 605A5048
-P 4650 4000
-F 0 "C1" H 4558 3954 50  0000 R CNN
-F 1 "C_Small" H 4558 4045 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4650 4000 50  0001 C CNN
-F 3 "~" H 4650 4000 50  0001 C CNN
-	1    4650 4000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4650 3900 4650 2600
+	3550 2700 3550 3950
 Wire Wire Line
 	4750 2700 4750 4500
 $Comp
@@ -618,8 +579,59 @@ F 3 "~" H 2150 1850 50  0001 C CNN
 	1    2150 1850
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 605A4D67
+P 4150 3950
+F 0 "C1" V 3921 3950 50  0000 C CNN
+F 1 "100nF" V 4012 3950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4150 3950 50  0001 C CNN
+F 3 "~" H 4150 3950 50  0001 C CNN
+	1    4150 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 2600 4650 3950
+Wire Wire Line
+	4250 3950 4650 3950
+Connection ~ 4650 3950
+Wire Wire Line
+	4650 3950 4650 4050
+Connection ~ 3550 3950
+Wire Wire Line
+	3550 3950 3550 5300
+Wire Wire Line
+	3350 2600 4650 2600
+Wire Wire Line
+	3550 3950 4050 3950
+Wire Wire Line
+	3650 4400 3650 4050
+Wire Wire Line
+	3650 4050 4650 4050
+Connection ~ 4650 4050
+Wire Wire Line
+	4650 4050 4650 4400
 Wire Bus Line
 	5000 2800 5000 5800
 Wire Bus Line
 	3250 3850 3250 5700
+$Comp
+L local:SN74HCT245PWR IC1
+U 1 1 605EB202
+P 3650 4400
+F 0 "IC1" H 4150 4665 50  0000 C CNN
+F 1 "SN74HCT245PWR" H 4150 4574 50  0000 C CNN
+F 2 "local:SN74HCT245PWR" H 4500 4500 50  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hct245" H 4500 4400 50  0001 L CNN
+F 4 "Octal Bus Transceivers With 3-State Outputs" H 4500 4300 50  0001 L CNN "Description"
+F 5 "1.2" H 4500 4200 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 4500 4100 50  0001 L CNN "Manufacturer_Name"
+F 7 "SN74HCT245PWR" H 4500 4000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-SN74HCT245PWR" H 4500 3900 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74HCT245PWR?qs=pt%2FIv5r0EPdWdXnOChoseA%3D%3D" H 4500 3800 50  0001 L CNN "Mouser Price/Stock"
+F 10 "SN74HCT245PWR" H 4500 3700 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/sn74hct245pwr/texas-instruments" H 4500 3600 50  0001 L CNN "Arrow Price/Stock"
+	1    3650 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
