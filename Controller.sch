@@ -254,7 +254,7 @@ U 1 1 605872F5
 P 3400 1550
 F 0 "J9" H 4028 1446 50  0000 L CNN
 F 1 "AMP_Mate-N-Lok_Power" H 4028 1355 50  0000 L CNN
-F 2 "local:TE_MATE-N-LOK_350211-1_1x04_P5.08mm_Vertical" H 4050 1650 50  0001 L CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-794374-x_1x01_P4.14mm_Horizontal" H 4050 1650 50  0001 L CNN
 F 3 "http://uk.rs-online.com/web/p/products/0471430" H 4050 1550 50  0001 L CNN
 F 4 "Pin & Socket Connectors CONN PCM 4 POS TIN" H 4050 1450 50  0001 L CNN "Description"
 F 5 "10.29" H 4050 1350 50  0001 L CNN "Height"
@@ -585,7 +585,7 @@ U 1 1 605A4D67
 P 4150 3950
 F 0 "C1" V 3921 3950 50  0000 C CNN
 F 1 "100nF" V 4012 3950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4150 3950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4150 3950 50  0001 C CNN
 F 3 "~" H 4150 3950 50  0001 C CNN
 	1    4150 3950
 	0    1    1    0   
@@ -611,17 +611,13 @@ Wire Wire Line
 Connection ~ 4650 4050
 Wire Wire Line
 	4650 4050 4650 4400
-Wire Bus Line
-	5000 2800 5000 5800
-Wire Bus Line
-	3250 3850 3250 5700
 $Comp
 L local:SN74HCT245PWR IC1
 U 1 1 605EB202
 P 3650 4400
 F 0 "IC1" H 4150 4665 50  0000 C CNN
 F 1 "SN74HCT245PWR" H 4150 4574 50  0000 C CNN
-F 2 "local:SN74HCT245PWR" H 4500 4500 50  0001 L CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4500 4500 50  0001 L CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hct245" H 4500 4400 50  0001 L CNN
 F 4 "Octal Bus Transceivers With 3-State Outputs" H 4500 4300 50  0001 L CNN "Description"
 F 5 "1.2" H 4500 4200 50  0001 L CNN "Height"
@@ -634,4 +630,8 @@ F 11 "https://www.arrow.com/en/products/sn74hct245pwr/texas-instruments" H 4500 
 	1    3650 4400
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	5000 2800 5000 5800
+Wire Bus Line
+	3250 3850 3250 5700
 $EndSCHEMATC
