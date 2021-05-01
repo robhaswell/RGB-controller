@@ -76,7 +76,7 @@ void synthwave() {
       hue = synthwave_fan_hue(224, 32, -20, zone_i-3, led_i);
     } else if (zone_i == 6) {
       // Reservoir starting from the bottom
-      hue = 192;
+      hue = 156;
     } else if (zone_i == 7) {
       // GPU & CPU starting from the left
       hue = 18 - led_i;
