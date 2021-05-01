@@ -1,8 +1,9 @@
 #include <Arduino.h>
 #include <WiFi.h>
-#include "FastLED.h"
+#include <FastLED.h>
 #include <ArduinoOTA.h>
-#include <wifi_secrets.h>
+
+#include "wifi_secrets.h"
 
 #define DELAY 200
 #define NUM_ZONES 8
@@ -17,11 +18,74 @@
 #define J7 33
 #define J8 32
 
+#define FOR_LOOP_ZONES for (int zone_i = 0; zone_i < NUM_ZONES; zone_i++)  \
+  {                                                                        \
+    for (int led_i = 0; led_i < NUM_LEDS; led_i++) {
+
+
 const char* ssid = SECRET_SSID;
 const char* password = SECRET_PASS;
 
 
 CRGB zones[NUM_ZONES][NUM_LEDS];
+
+// RGB functions
+void identify_leds() {
+  FOR_LOOP_ZONES
+    zones[zone_i][led_i].setRGB(255, 0, 255);
+    FastLED.show();
+    delay(20);
+
+    zones[zone_i][led_i].setRGB(0, 0, 0);
+    FastLED.show();
+    // delay(10);
+  } }
+  delay(500);
+}
+
+void cycle_hues() {
+  static uint8_t start_hue = 0;
+  uint8_t hue = start_hue;
+  start_hue++;
+
+  for (int i = 0; i < NUM_ZONES; i++)
+  {
+    for (int j = 0; j < NUM_LEDS; j++) {
+      zones[i][j].setHSV(hue, UINT8_MAX, UINT8_MAX);
+      hue += 3;
+    }
+  }
+}
+
+uint8_t synthwave_fan_hue(uint8_t start_hue, int fan_i, int led_i, bool reverse=false) {
+  uint8_t hue = start_hue;
+  int total_led_i = fan_i * NUM_LEDS + led_i;
+  if (reverse)
+    hue -= total_led_i;
+  else
+    hue += total_led_i;
+  return hue;
+}
+
+void synthwave() {
+  FOR_LOOP_ZONES
+    uint8_t hue;
+    if (zone_i <= 2) {
+      // Side fans starting from the top
+      hue = synthwave_fan_hue(64, zone_i, led_i, true);
+    } else if (zone_i <= 5) {
+      // Bottom fans starting from the left
+      hue = synthwave_fan_hue(224, zone_i-3, led_i, true);
+    } else if (zone_i == 6) {
+      // Reservoir starting from the bottom
+      hue = 192;
+    } else if (zone_i == 7) {
+      // GPU & CPU starting from the left
+      hue = 8 + led_i * 2;
+    }
+    zones[zone_i][led_i].setHSV(hue, UINT8_MAX, UINT8_MAX);
+  } }
+}
 
 void connectToNetwork() {
   WiFi.begin(ssid, password);
@@ -91,18 +155,9 @@ void setup() {
 void loop() {
   ArduinoOTA.handle();
 
-  static uint8_t start_hue = 0;
-  uint8_t hue = start_hue;
+  // Update LED colors
+  synthwave();
 
-  start_hue++;
-
-  for (int i = 0; i < NUM_ZONES; i++)
-  {
-    for (int j = 0; j < NUM_LEDS; j++) {
-      zones[i][j].setHSV(hue, UINT8_MAX, UINT8_MAX);
-      hue += 3;
-    }
-  }
   FastLED.show();
   delay(DELAY);
 }
