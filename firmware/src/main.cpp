@@ -57,13 +57,11 @@ void cycle_hues() {
   }
 }
 
-uint8_t synthwave_fan_hue(uint8_t start_hue, int fan_i, int led_i, bool reverse=false) {
-  uint8_t hue = start_hue;
-  int total_led_i = fan_i * NUM_LEDS + led_i;
-  if (reverse)
-    hue -= total_led_i;
-  else
-    hue += total_led_i;
+uint8_t synthwave_fan_hue(uint8_t start_hue, int step, int ring_offset, int fan_i, int led_i) {
+  uint8_t hue = start_hue - (fan_i * step);
+  if (led_i >= 8)
+    // Ring LED
+    hue += ring_offset;
   return hue;
 }
 
@@ -72,16 +70,17 @@ void synthwave() {
     uint8_t hue;
     if (zone_i <= 2) {
       // Side fans starting from the top
-      hue = synthwave_fan_hue(64, zone_i, led_i, true);
+      hue = synthwave_fan_hue(20, 8, 12, zone_i, led_i);
     } else if (zone_i <= 5) {
       // Bottom fans starting from the left
-      hue = synthwave_fan_hue(224, zone_i-3, led_i, true);
+      hue = synthwave_fan_hue(224, 32, -20, zone_i-3, led_i);
     } else if (zone_i == 6) {
       // Reservoir starting from the bottom
       hue = 192;
     } else if (zone_i == 7) {
       // GPU & CPU starting from the left
-      hue = 8 + led_i * 2;
+      hue = 18 - led_i;
+      // hue = 8 + led_i * 2;
     }
     zones[zone_i][led_i].setHSV(hue, UINT8_MAX, UINT8_MAX);
   } }
