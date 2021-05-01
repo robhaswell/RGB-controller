@@ -79,8 +79,8 @@ void synthwave() {
       hue = 156;
     } else if (zone_i == 7) {
       // GPU & CPU starting from the left
-      hue = 18 - led_i;
-      // hue = 8 + led_i * 2;
+      // hue = 20 - led_i;
+      hue = 10 + led_i;
     }
     zones[zone_i][led_i].setHSV(hue, UINT8_MAX, UINT8_MAX);
   } }
