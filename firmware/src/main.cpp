@@ -2,8 +2,9 @@
 #include <WiFi.h>
 #include "FastLED.h"
 #include <ArduinoOTA.h>
+#include <wifi_secrets.h>
 
-#define DELAY 1000
+#define DELAY 200
 #define NUM_ZONES 8
 #define NUM_LEDS 24
 
@@ -16,8 +17,8 @@
 #define J7 33
 #define J8 32
 
-const char* ssid = "";
-const char* password =  "";
+const char* ssid = SECRET_SSID;
+const char* password = SECRET_PASS;
 
 
 CRGB zones[NUM_ZONES][NUM_LEDS];
@@ -90,21 +91,16 @@ void setup() {
 void loop() {
   ArduinoOTA.handle();
 
-  uint8_t hue = 0;
+  static uint8_t start_hue = 0;
+  uint8_t hue = start_hue;
+
+  start_hue++;
 
   for (int i = 0; i < NUM_ZONES; i++)
   {
     for (int j = 0; j < NUM_LEDS; j++) {
       zones[i][j].setHSV(hue, UINT8_MAX, UINT8_MAX);
-      hue++;
-    }
-  }
-  FastLED.show();
-  delay(DELAY);
-  for (int i = 0; i < NUM_ZONES; i++) {
-    for (int j = 0; j < NUM_LEDS; j++) {
-      zones[i][j].setHSV(hue, UINT8_MAX, UINT8_MAX);
-      hue++;
+      hue += 3;
     }
   }
   FastLED.show();
