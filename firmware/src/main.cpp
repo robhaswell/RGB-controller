@@ -70,7 +70,7 @@ void synthwave() {
     uint8_t hue;
     if (zone_i <= 2) {
       // Side fans starting from the top
-      hue = synthwave_fan_hue(20, 8, 12, zone_i, led_i);
+      hue = synthwave_fan_hue(20, 6, 8, zone_i, led_i);
     } else if (zone_i <= 5) {
       // Bottom fans starting from the left
       hue = synthwave_fan_hue(224, 32, -20, zone_i-3, led_i);
@@ -80,7 +80,7 @@ void synthwave() {
     } else if (zone_i == 7) {
       // GPU & CPU starting from the left
       // hue = 20 - led_i;
-      hue = 10 + led_i;
+      hue = 12 + led_i;
     }
     zones[zone_i][led_i].setHSV(hue, UINT8_MAX, UINT8_MAX);
   } }
