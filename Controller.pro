@@ -1,4 +1,4 @@
-update=21/03/2021 14:36:22
+update=04/05/2021 14:38:06
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=Simplified RGB Controller.net
+LastNetListRead=Controller.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -39,7 +39,7 @@ MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
-TrackWidth2=0.45
+TrackWidth2=0.4
 TrackWidth3=0.75
 TrackWidth4=1
 TrackWidth5=5

@@ -29,11 +29,9 @@ NoConn ~ 1650 3600
 NoConn ~ 1650 3700
 NoConn ~ 2250 3200
 NoConn ~ 2850 3500
-NoConn ~ 2850 3600
 NoConn ~ 2850 3700
 NoConn ~ 2850 3800
 NoConn ~ 2850 3900
-NoConn ~ 2850 4300
 NoConn ~ 2850 4400
 NoConn ~ 2850 4500
 NoConn ~ 2850 4600
@@ -46,12 +44,12 @@ NoConn ~ 2850 5700
 $Comp
 L power:GND #PWR02
 U 1 1 605AA87D
-P 3250 2700
-F 0 "#PWR02" H 3250 2450 50  0001 C CNN
-F 1 "GND" H 3255 2527 50  0000 C CNN
-F 2 "" H 3250 2700 50  0001 C CNN
-F 3 "" H 3250 2700 50  0001 C CNN
-	1    3250 2700
+P 3250 2600
+F 0 "#PWR02" H 3250 2350 50  0001 C CNN
+F 1 "GND" H 3255 2427 50  0000 C CNN
+F 2 "" H 3250 2600 50  0001 C CNN
+F 3 "" H 3250 2600 50  0001 C CNN
+	1    3250 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -64,179 +62,13 @@ Wire Wire Line
 	2150 6100 2150 6000
 Connection ~ 2250 6100
 Wire Wire Line
-	4650 4500 4750 4500
-Connection ~ 4650 2600
-Connection ~ 4750 2700
+	4650 3500 4750 3500
+Connection ~ 4650 2500
+Connection ~ 4750 2600
 Wire Wire Line
-	5300 4050 5500 4050
+	4650 2500 5300 2500
 Wire Wire Line
-	5200 5500 5200 5900
-Connection ~ 5200 5500
-Wire Wire Line
-	5500 5500 5200 5500
-Wire Wire Line
-	5200 5100 5200 5500
-Connection ~ 5200 5100
-Wire Wire Line
-	5500 5100 5200 5100
-Wire Wire Line
-	5200 4700 5200 5100
-Connection ~ 5200 4700
-Wire Wire Line
-	5500 4700 5200 4700
-Wire Wire Line
-	5200 4300 5200 4700
-Connection ~ 5200 4300
-Wire Wire Line
-	5500 4300 5200 4300
-Wire Wire Line
-	5200 3900 5200 4300
-Connection ~ 5200 3900
-Wire Wire Line
-	5500 3900 5200 3900
-Wire Wire Line
-	5200 3500 5200 3900
-Connection ~ 5200 3500
-Wire Wire Line
-	5500 3500 5200 3500
-Wire Wire Line
-	5200 3100 5200 3500
-Connection ~ 5200 3100
-Wire Wire Line
-	5500 3100 5200 3100
-Wire Wire Line
-	4650 2600 5300 2600
-Wire Wire Line
-	4750 2700 5200 2700
-Wire Wire Line
-	5200 5900 5500 5900
-Wire Wire Line
-	5200 2700 5200 3100
-Wire Wire Line
-	5300 2850 5300 3250
-Connection ~ 5300 2850
-Wire Wire Line
-	5500 2850 5300 2850
-Wire Wire Line
-	5300 3250 5300 3650
-Connection ~ 5300 3250
-Wire Wire Line
-	5500 3250 5300 3250
-Wire Wire Line
-	5300 3650 5300 4050
-Connection ~ 5300 3650
-Wire Wire Line
-	5500 3650 5300 3650
-Wire Wire Line
-	5300 4050 5300 4450
-Connection ~ 5300 4050
-Wire Wire Line
-	5300 4450 5300 4850
-Connection ~ 5300 4450
-Wire Wire Line
-	5300 2600 5300 2850
-Wire Wire Line
-	5500 4450 5300 4450
-Wire Wire Line
-	5300 4850 5300 5250
-Connection ~ 5300 4850
-Wire Wire Line
-	5500 4850 5300 4850
-Wire Wire Line
-	5300 5250 5300 5650
-Connection ~ 5300 5250
-Wire Wire Line
-	5500 5250 5300 5250
-Wire Wire Line
-	5300 5650 5500 5650
-$Comp
-L local:RGB_3_pin J8
-U 1 1 60599B6D
-P 5700 5750
-F 0 "J8" H 5780 5767 50  0000 L CNN
-F 1 "RGB_3_pin" H 5780 5676 50  0000 L CNN
-F 2 "local:RGB_3-Pin" H 5700 5750 50  0001 C CNN
-F 3 "~" H 5700 5750 50  0001 C CNN
-	1    5700 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L local:RGB_3_pin J7
-U 1 1 60599B63
-P 5700 5350
-F 0 "J7" H 5780 5367 50  0000 L CNN
-F 1 "RGB_3_pin" H 5780 5276 50  0000 L CNN
-F 2 "local:RGB_3-Pin" H 5700 5350 50  0001 C CNN
-F 3 "~" H 5700 5350 50  0001 C CNN
-	1    5700 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L local:RGB_3_pin J6
-U 1 1 60599B59
-P 5700 4950
-F 0 "J6" H 5780 4967 50  0000 L CNN
-F 1 "RGB_3_pin" H 5780 4876 50  0000 L CNN
-F 2 "local:RGB_3-Pin" H 5700 4950 50  0001 C CNN
-F 3 "~" H 5700 4950 50  0001 C CNN
-	1    5700 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L local:RGB_3_pin J5
-U 1 1 60599A4B
-P 5700 4550
-F 0 "J5" H 5780 4567 50  0000 L CNN
-F 1 "RGB_3_pin" H 5780 4476 50  0000 L CNN
-F 2 "local:RGB_3-Pin" H 5700 4550 50  0001 C CNN
-F 3 "~" H 5700 4550 50  0001 C CNN
-	1    5700 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L local:RGB_3_pin J4
-U 1 1 60595F15
-P 5700 4150
-F 0 "J4" H 5780 4167 50  0000 L CNN
-F 1 "RGB_3_pin" H 5780 4076 50  0000 L CNN
-F 2 "local:RGB_3-Pin" H 5700 4150 50  0001 C CNN
-F 3 "~" H 5700 4150 50  0001 C CNN
-	1    5700 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L local:RGB_3_pin J3
-U 1 1 60595E37
-P 5700 3750
-F 0 "J3" H 5780 3767 50  0000 L CNN
-F 1 "RGB_3_pin" H 5780 3676 50  0000 L CNN
-F 2 "local:RGB_3-Pin" H 5700 3750 50  0001 C CNN
-F 3 "~" H 5700 3750 50  0001 C CNN
-	1    5700 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L local:RGB_3_pin J2
-U 1 1 60595303
-P 5700 3350
-F 0 "J2" H 5780 3367 50  0000 L CNN
-F 1 "RGB_3_pin" H 5780 3276 50  0000 L CNN
-F 2 "local:RGB_3-Pin" H 5700 3350 50  0001 C CNN
-F 3 "~" H 5700 3350 50  0001 C CNN
-	1    5700 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L local:RGB_3_pin J1
-U 1 1 60583046
-P 5700 2950
-F 0 "J1" H 5780 2967 50  0000 L CNN
-F 1 "RGB_3_pin" H 5780 2876 50  0000 L CNN
-F 2 "local:RGB_3-Pin" H 5700 2950 50  0001 C CNN
-F 3 "~" H 5700 2950 50  0001 C CNN
-	1    5700 2950
-	1    0    0    -1  
-$EndComp
+	4750 2600 5200 2600
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 606643BF
@@ -249,10 +81,10 @@ F 3 "~" H 3350 1550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L local:AMP_Mate-N-Lok_Power J9
+L local:AMP_Mate-N-Lok_Power J11
 U 1 1 605872F5
 P 3400 1550
-F 0 "J9" H 4028 1446 50  0000 L CNN
+F 0 "J11" H 4028 1446 50  0000 L CNN
 F 1 "AMP_Mate-N-Lok_Power" H 4028 1355 50  0000 L CNN
 F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-794374-x_1x01_P4.14mm_Horizontal" H 4050 1650 50  0001 L CNN
 F 3 "http://uk.rs-online.com/web/p/products/0471430" H 4050 1550 50  0001 L CNN
@@ -278,21 +110,21 @@ F 3 "" H 3350 1550 50  0001 C CNN
 $EndComp
 Connection ~ 3350 1550
 Wire Wire Line
-	3350 1550 3350 2600
+	3350 1550 3350 2500
 Wire Wire Line
 	3400 1750 3250 1750
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 606C77E7
-P 3250 2700
-F 0 "#FLG0101" H 3250 2775 50  0001 C CNN
-F 1 "PWR_FLAG" V 3250 2828 50  0000 L CNN
-F 2 "" H 3250 2700 50  0001 C CNN
-F 3 "~" H 3250 2700 50  0001 C CNN
-	1    3250 2700
+P 3250 2600
+F 0 "#FLG0101" H 3250 2675 50  0001 C CNN
+F 1 "PWR_FLAG" V 3250 2728 50  0000 L CNN
+F 2 "" H 3250 2600 50  0001 C CNN
+F 3 "~" H 3250 2600 50  0001 C CNN
+	1    3250 2600
 	0    -1   -1   0   
 $EndComp
-Connection ~ 3250 2700
+Connection ~ 3250 2600
 Wire Wire Line
 	3350 1550 3400 1550
 Wire Wire Line
@@ -374,22 +206,6 @@ Wire Wire Line
 	2850 5400 3150 5400
 Wire Wire Line
 	2850 5500 3150 5500
-Entry Wire Line
-	3250 4400 3350 4500
-Entry Wire Line
-	3250 4500 3350 4600
-Entry Wire Line
-	3250 4600 3350 4700
-Entry Wire Line
-	3250 4700 3350 4800
-Entry Wire Line
-	3250 4800 3350 4900
-Entry Wire Line
-	3250 4900 3350 5000
-Entry Wire Line
-	3250 5000 3350 5100
-Entry Wire Line
-	3250 5100 3350 5200
 Text Label 2950 4100 0    50   ~ 0
 A8
 Text Label 2950 4200 0    50   ~ 0
@@ -409,85 +225,35 @@ A7
 Text Label 2950 5500 0    50   ~ 0
 A2
 Entry Wire Line
-	4900 4600 5000 4700
+	4900 3700 5000 3800
 Entry Wire Line
-	4900 4700 5000 4800
+	4900 3800 5000 3900
 Entry Wire Line
-	4900 4800 5000 4900
+	4900 3900 5000 4000
 Entry Wire Line
-	4900 4900 5000 5000
+	4900 4000 5000 4100
 Entry Wire Line
-	4900 5000 5000 5100
+	4900 4100 5000 4200
 Entry Wire Line
-	4900 5100 5000 5200
+	4900 4200 5000 4300
 Entry Wire Line
-	4900 5200 5000 5300
-Entry Wire Line
-	4900 5300 5000 5400
-Entry Wire Line
-	5000 2850 5100 2950
-Entry Wire Line
-	5000 3250 5100 3350
-Entry Wire Line
-	5000 3650 5100 3750
-Entry Wire Line
-	5000 4050 5100 4150
-Entry Wire Line
-	5000 4450 5100 4550
-Entry Wire Line
-	5000 4850 5100 4950
-Entry Wire Line
-	5000 5250 5100 5350
-Entry Wire Line
-	5000 5650 5100 5750
-Text Label 4750 4600 0    50   ~ 0
+	4900 4300 5000 4400
+Text Label 4800 3600 0    50   ~ 0
 B1
-Text Label 4750 4700 0    50   ~ 0
+Text Label 4800 3700 0    50   ~ 0
 B2
-Text Label 4750 4800 0    50   ~ 0
+Text Label 4800 3800 0    50   ~ 0
 B3
-Text Label 4750 4900 0    50   ~ 0
+Text Label 4800 3900 0    50   ~ 0
 B4
-Text Label 4750 5000 0    50   ~ 0
+Text Label 4800 4000 0    50   ~ 0
 B5
-Text Label 4750 5100 0    50   ~ 0
+Text Label 4800 4100 0    50   ~ 0
 B6
-Text Label 4750 5200 0    50   ~ 0
+Text Label 4800 4200 0    50   ~ 0
 B7
-Text Label 4750 5300 0    50   ~ 0
+Text Label 4800 4300 0    50   ~ 0
 B8
-Wire Wire Line
-	5500 2950 5100 2950
-Wire Wire Line
-	5100 3350 5500 3350
-Wire Wire Line
-	5500 3750 5100 3750
-Wire Wire Line
-	5500 4150 5100 4150
-Wire Wire Line
-	5500 4550 5100 4550
-Wire Wire Line
-	5100 4950 5500 4950
-Wire Wire Line
-	5100 5350 5500 5350
-Wire Wire Line
-	5500 5750 5100 5750
-Text Label 5100 2950 0    50   ~ 0
-B8
-Text Label 5100 3350 0    50   ~ 0
-B7
-Text Label 5100 3750 0    50   ~ 0
-B6
-Text Label 5100 4150 0    50   ~ 0
-B5
-Text Label 5100 4550 0    50   ~ 0
-B4
-Text Label 5100 4950 0    50   ~ 0
-B3
-Text Label 5100 5350 0    50   ~ 0
-B2
-Text Label 5100 5750 0    50   ~ 0
-B1
 Wire Wire Line
 	3400 1850 2150 1850
 $Comp
@@ -503,71 +269,14 @@ F 3 "" H 2150 1850 50  0001 C CNN
 $EndComp
 Connection ~ 2150 1850
 Wire Wire Line
-	3250 2700 3250 1750
+	3250 2600 3250 1750
 Wire Wire Line
 	2150 1850 2150 3200
 Wire Wire Line
-	4900 5300 4650 5300
+	3550 2600 4750 2600
+Connection ~ 3550 2600
 Wire Wire Line
-	4650 5200 4900 5200
-Wire Wire Line
-	4900 5100 4650 5100
-Wire Wire Line
-	4650 5000 4900 5000
-Wire Wire Line
-	4900 4900 4650 4900
-Wire Wire Line
-	4650 4800 4900 4800
-Wire Wire Line
-	4900 4700 4650 4700
-Wire Wire Line
-	4650 4600 4900 4600
-Text Label 3450 5200 0    50   ~ 0
-A8
-Text Label 3450 4500 0    50   ~ 0
-A1
-Text Label 3450 4600 0    50   ~ 0
-A2
-Text Label 3450 4700 0    50   ~ 0
-A3
-Text Label 3450 4800 0    50   ~ 0
-A4
-Text Label 3450 4900 0    50   ~ 0
-A5
-Text Label 3450 5000 0    50   ~ 0
-A6
-Text Label 3450 5100 0    50   ~ 0
-A7
-Wire Wire Line
-	3350 5200 3650 5200
-Wire Wire Line
-	3650 5100 3350 5100
-Wire Wire Line
-	3350 5000 3650 5000
-Wire Wire Line
-	3650 4900 3350 4900
-Wire Wire Line
-	3350 4800 3650 4800
-Wire Wire Line
-	3650 4700 3350 4700
-Wire Wire Line
-	3350 4600 3650 4600
-Wire Wire Line
-	3650 4500 3350 4500
-Wire Wire Line
-	3550 5300 3550 6100
-Wire Wire Line
-	3650 5300 3550 5300
-Connection ~ 3550 5300
-Wire Wire Line
-	3550 2700 4750 2700
-Connection ~ 3550 2700
-Wire Wire Line
-	3250 2700 3550 2700
-Wire Wire Line
-	3550 2700 3550 3950
-Wire Wire Line
-	4750 2700 4750 4500
+	3250 2600 3550 2600
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 605B2526
@@ -579,59 +288,698 @@ F 3 "~" H 2150 1850 50  0001 C CNN
 	1    2150 1850
 	0    -1   -1   0   
 $EndComp
+Connection ~ 4650 3050
+Wire Wire Line
+	4650 2950 4650 3050
+Connection ~ 3550 4300
+Wire Wire Line
+	3650 4300 3550 4300
+Wire Wire Line
+	3350 4200 3650 4200
+Wire Wire Line
+	3650 4100 3350 4100
+Wire Wire Line
+	3350 4000 3650 4000
+Wire Wire Line
+	3650 3900 3350 3900
+Wire Wire Line
+	3350 3800 3650 3800
+Wire Wire Line
+	3650 3700 3350 3700
+Wire Wire Line
+	3350 3600 3650 3600
+Wire Wire Line
+	3650 3500 3350 3500
+Text Label 3450 4100 0    50   ~ 0
+A7
+Text Label 3450 4000 0    50   ~ 0
+A6
+Text Label 3450 3900 0    50   ~ 0
+A5
+Text Label 3450 3800 0    50   ~ 0
+A4
+Text Label 3450 3700 0    50   ~ 0
+A3
+Text Label 3450 3600 0    50   ~ 0
+A2
+Text Label 3450 3500 0    50   ~ 0
+A1
+Text Label 3450 4200 0    50   ~ 0
+A8
+Entry Wire Line
+	3250 4100 3350 4200
+Entry Wire Line
+	3250 4000 3350 4100
+Entry Wire Line
+	3250 3900 3350 4000
+Entry Wire Line
+	3250 3800 3350 3900
+Entry Wire Line
+	3250 3700 3350 3800
+Entry Wire Line
+	3250 3600 3350 3700
+Entry Wire Line
+	3250 3500 3350 3600
+Entry Wire Line
+	3250 3400 3350 3500
+Wire Wire Line
+	3550 2950 3550 4300
+Connection ~ 4650 2950
+Connection ~ 3550 2950
+Wire Wire Line
+	3650 3400 3650 3050
 $Comp
 L Device:C_Small C1
 U 1 1 605A4D67
-P 4150 3950
-F 0 "C1" V 3921 3950 50  0000 C CNN
-F 1 "100nF" V 4012 3950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4150 3950 50  0001 C CNN
-F 3 "~" H 4150 3950 50  0001 C CNN
-	1    4150 3950
+P 4150 2950
+F 0 "C1" V 3921 2950 50  0000 C CNN
+F 1 "100nF" V 4012 2950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4150 2950 50  0001 C CNN
+F 3 "~" H 4150 2950 50  0001 C CNN
+	1    4150 2950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4650 2600 4650 3950
+	4250 2950 4650 2950
 Wire Wire Line
-	4250 3950 4650 3950
-Connection ~ 4650 3950
+	3550 2950 4050 2950
 Wire Wire Line
-	4650 3950 4650 4050
-Connection ~ 3550 3950
+	3650 3050 4650 3050
 Wire Wire Line
-	3550 3950 3550 5300
+	4650 2500 4650 2950
 Wire Wire Line
-	3350 2600 4650 2600
+	4750 2600 4750 3500
 Wire Wire Line
-	3550 3950 4050 3950
+	3550 2600 3550 2950
 Wire Wire Line
-	3650 4400 3650 4050
+	3350 2500 4650 2500
 Wire Wire Line
-	3650 4050 4650 4050
-Connection ~ 4650 4050
+	4650 5300 4750 5300
+Entry Wire Line
+	4900 5400 5000 5500
+Entry Wire Line
+	4900 5500 5000 5600
+Text Label 4750 5400 0    50   ~ 0
+B9
+Text Label 4750 5500 0    50   ~ 0
+B10
 Wire Wire Line
-	4650 4050 4650 4400
+	4900 5500 4650 5500
+Wire Wire Line
+	4650 5400 4900 5400
+Connection ~ 4650 4850
+Wire Wire Line
+	4650 4750 4650 4850
+Connection ~ 3550 6100
+Wire Wire Line
+	3650 6100 3550 6100
+Wire Wire Line
+	3350 5400 3650 5400
+Wire Wire Line
+	3650 5300 3350 5300
+Text Label 3450 5400 0    50   ~ 0
+A10
+Text Label 3450 5300 0    50   ~ 0
+A9
+Entry Wire Line
+	3250 5300 3350 5400
+Entry Wire Line
+	3250 5200 3350 5300
+Wire Wire Line
+	3550 4750 3550 6100
+Connection ~ 4650 4750
+Connection ~ 3550 4750
+Wire Wire Line
+	3650 5200 3650 4850
+Wire Wire Line
+	4650 4850 4650 5200
+$Comp
+L Device:C_Small C2
+U 1 1 609A56AA
+P 4150 4750
+F 0 "C2" V 3921 4750 50  0000 C CNN
+F 1 "100nF" V 4012 4750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4150 4750 50  0001 C CNN
+F 3 "~" H 4150 4750 50  0001 C CNN
+	1    4150 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 4750 4650 4750
+Wire Wire Line
+	3550 4750 4050 4750
+Wire Wire Line
+	3650 4850 4650 4850
+$Comp
+L local:SN74HCT245PWR IC2
+U 1 1 609A56BF
+P 3650 5200
+F 0 "IC2" H 4150 5465 50  0000 C CNN
+F 1 "SN74HCT245PWR" H 4150 5374 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4500 5300 50  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hct245" H 4500 5200 50  0001 L CNN
+F 4 "Octal Bus Transceivers With 3-State Outputs" H 4500 5100 50  0001 L CNN "Description"
+F 5 "1.2" H 4500 5000 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 4500 4900 50  0001 L CNN "Manufacturer_Name"
+F 7 "SN74HCT245PWR" H 4500 4800 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-SN74HCT245PWR" H 4500 4700 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74HCT245PWR?qs=pt%2FIv5r0EPdWdXnOChoseA%3D%3D" H 4500 4600 50  0001 L CNN "Mouser Price/Stock"
+F 10 "SN74HCT245PWR" H 4500 4500 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/sn74hct245pwr/texas-instruments" H 4500 4400 50  0001 L CNN "Arrow Price/Stock"
+	1    3650 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4300 3550 4750
+Wire Wire Line
+	4650 3050 4650 3400
+Connection ~ 4650 3400
 $Comp
 L local:SN74HCT245PWR IC1
 U 1 1 605EB202
-P 3650 4400
-F 0 "IC1" H 4150 4665 50  0000 C CNN
-F 1 "SN74HCT245PWR" H 4150 4574 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4500 4500 50  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hct245" H 4500 4400 50  0001 L CNN
-F 4 "Octal Bus Transceivers With 3-State Outputs" H 4500 4300 50  0001 L CNN "Description"
-F 5 "1.2" H 4500 4200 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 4500 4100 50  0001 L CNN "Manufacturer_Name"
-F 7 "SN74HCT245PWR" H 4500 4000 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "595-SN74HCT245PWR" H 4500 3900 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74HCT245PWR?qs=pt%2FIv5r0EPdWdXnOChoseA%3D%3D" H 4500 3800 50  0001 L CNN "Mouser Price/Stock"
-F 10 "SN74HCT245PWR" H 4500 3700 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/sn74hct245pwr/texas-instruments" H 4500 3600 50  0001 L CNN "Arrow Price/Stock"
-	1    3650 4400
+P 3650 3400
+F 0 "IC1" H 4150 3665 50  0000 C CNN
+F 1 "SN74HCT245PWR" H 4150 3574 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4500 3500 50  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hct245" H 4500 3400 50  0001 L CNN
+F 4 "Octal Bus Transceivers With 3-State Outputs" H 4500 3300 50  0001 L CNN "Description"
+F 5 "1.2" H 4500 3200 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 4500 3100 50  0001 L CNN "Manufacturer_Name"
+F 7 "SN74HCT245PWR" H 4500 3000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-SN74HCT245PWR" H 4500 2900 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74HCT245PWR?qs=pt%2FIv5r0EPdWdXnOChoseA%3D%3D" H 4500 2800 50  0001 L CNN "Mouser Price/Stock"
+F 10 "SN74HCT245PWR" H 4500 2700 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/sn74hct245pwr/texas-instruments" H 4500 2600 50  0001 L CNN "Arrow Price/Stock"
+	1    3650 3400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4650 3400 4650 4750
+Connection ~ 4750 3500
+Wire Wire Line
+	4650 3600 4900 3600
+Wire Wire Line
+	4650 3700 4900 3700
+Wire Wire Line
+	4650 3800 4900 3800
+Wire Wire Line
+	4650 3900 4900 3900
+Wire Wire Line
+	4650 4000 4900 4000
+Wire Wire Line
+	4650 4100 4900 4100
+Wire Wire Line
+	4650 4200 4900 4200
+Wire Wire Line
+	4650 4300 4900 4300
+Wire Wire Line
+	4750 3500 4750 5300
+Entry Wire Line
+	3150 3600 3250 3700
+Wire Wire Line
+	3150 3600 2850 3600
+Wire Wire Line
+	2850 4300 3150 4300
+Entry Wire Line
+	3150 4300 3250 4400
+Text Label 2950 3600 0    50   ~ 0
+A9
+Text Label 2950 4300 0    50   ~ 0
+A10
+Wire Wire Line
+	5450 5900 5700 5900
+Connection ~ 5450 5900
+$Comp
+L Device:C_Small C10
+U 1 1 60961290
+P 5450 5800
+F 0 "C10" V 5221 5800 50  0000 C CNN
+F 1 "1000nF" V 5312 5800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 5800 50  0001 C CNN
+F 3 "~" H 5450 5800 50  0001 C CNN
+	1    5450 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 5500 5200 5500
+Connection ~ 5450 5500
+Wire Wire Line
+	5450 5100 5200 5100
+Connection ~ 5450 5100
+Wire Wire Line
+	5450 4700 5200 4700
+Connection ~ 5450 4700
+Wire Wire Line
+	5450 4300 5200 4300
+Connection ~ 5450 4300
+Wire Wire Line
+	5450 3900 5200 3900
+Connection ~ 5450 3900
+Wire Wire Line
+	5450 3500 5200 3500
+Connection ~ 5450 3500
+Wire Wire Line
+	5450 3250 5300 3250
+Connection ~ 5450 3250
+$Comp
+L Device:C_Small C9
+U 1 1 609452B4
+P 5450 5400
+F 0 "C9" V 5221 5400 50  0000 C CNN
+F 1 "1000nF" V 5312 5400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 5400 50  0001 C CNN
+F 3 "~" H 5450 5400 50  0001 C CNN
+	1    5450 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 60944E8F
+P 5450 5000
+F 0 "C8" V 5221 5000 50  0000 C CNN
+F 1 "1000nF" V 5312 5000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 5000 50  0001 C CNN
+F 3 "~" H 5450 5000 50  0001 C CNN
+	1    5450 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 60944A8A
+P 5450 4600
+F 0 "C7" V 5221 4600 50  0000 C CNN
+F 1 "1000nF" V 5312 4600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 4600 50  0001 C CNN
+F 3 "~" H 5450 4600 50  0001 C CNN
+	1    5450 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 60944029
+P 5450 4200
+F 0 "C6" V 5221 4200 50  0000 C CNN
+F 1 "1000nF" V 5312 4200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 4200 50  0001 C CNN
+F 3 "~" H 5450 4200 50  0001 C CNN
+	1    5450 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 60943976
+P 5450 3800
+F 0 "C5" V 5221 3800 50  0000 C CNN
+F 1 "1000nF" V 5312 3800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 3800 50  0001 C CNN
+F 3 "~" H 5450 3800 50  0001 C CNN
+	1    5450 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 3300 5450 3250
+Wire Wire Line
+	5450 3100 5700 3100
+Connection ~ 5450 3100
+$Comp
+L Device:C_Small C4
+U 1 1 60930546
+P 5450 3400
+F 0 "C4" V 5221 3400 50  0000 C CNN
+F 1 "1000nF" V 5312 3400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 3400 50  0001 C CNN
+F 3 "~" H 5450 3400 50  0001 C CNN
+	1    5450 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 3100 5450 3100
+Wire Wire Line
+	5450 2850 5300 2850
+Connection ~ 5450 2850
+Wire Wire Line
+	5450 2900 5450 2850
+$Comp
+L local:RGB_3_pin J1
+U 1 1 60583046
+P 5900 2950
+F 0 "J1" H 5980 2967 50  0000 L CNN
+F 1 "RGB_3_pin" H 5980 2876 50  0000 L CNN
+F 2 "local:RGB_3-Pin" H 5900 2950 50  0001 C CNN
+F 3 "~" H 5900 2950 50  0001 C CNN
+	1    5900 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2850 5450 2850
+Wire Wire Line
+	5700 2950 5100 2950
+$Comp
+L local:RGB_3_pin J8
+U 1 1 60599B6D
+P 5900 5750
+F 0 "J8" H 5980 5767 50  0000 L CNN
+F 1 "RGB_3_pin" H 5980 5676 50  0000 L CNN
+F 2 "local:RGB_3-Pin" H 5900 5750 50  0001 C CNN
+F 3 "~" H 5900 5750 50  0001 C CNN
+	1    5900 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L local:RGB_3_pin J7
+U 1 1 60599B63
+P 5900 5350
+F 0 "J7" H 5980 5367 50  0000 L CNN
+F 1 "RGB_3_pin" H 5980 5276 50  0000 L CNN
+F 2 "local:RGB_3-Pin" H 5900 5350 50  0001 C CNN
+F 3 "~" H 5900 5350 50  0001 C CNN
+	1    5900 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L local:RGB_3_pin J6
+U 1 1 60599B59
+P 5900 4950
+F 0 "J6" H 5980 4967 50  0000 L CNN
+F 1 "RGB_3_pin" H 5980 4876 50  0000 L CNN
+F 2 "local:RGB_3-Pin" H 5900 4950 50  0001 C CNN
+F 3 "~" H 5900 4950 50  0001 C CNN
+	1    5900 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L local:RGB_3_pin J5
+U 1 1 60599A4B
+P 5900 4550
+F 0 "J5" H 5980 4567 50  0000 L CNN
+F 1 "RGB_3_pin" H 5980 4476 50  0000 L CNN
+F 2 "local:RGB_3-Pin" H 5900 4550 50  0001 C CNN
+F 3 "~" H 5900 4550 50  0001 C CNN
+	1    5900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L local:RGB_3_pin J4
+U 1 1 60595F15
+P 5900 4150
+F 0 "J4" H 5980 4167 50  0000 L CNN
+F 1 "RGB_3_pin" H 5980 4076 50  0000 L CNN
+F 2 "local:RGB_3-Pin" H 5900 4150 50  0001 C CNN
+F 3 "~" H 5900 4150 50  0001 C CNN
+	1    5900 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L local:RGB_3_pin J3
+U 1 1 60595E37
+P 5900 3750
+F 0 "J3" H 5980 3767 50  0000 L CNN
+F 1 "RGB_3_pin" H 5980 3676 50  0000 L CNN
+F 2 "local:RGB_3-Pin" H 5900 3750 50  0001 C CNN
+F 3 "~" H 5900 3750 50  0001 C CNN
+	1    5900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L local:RGB_3_pin J2
+U 1 1 60595303
+P 5900 3350
+F 0 "J2" H 5980 3367 50  0000 L CNN
+F 1 "RGB_3_pin" H 5980 3276 50  0000 L CNN
+F 2 "local:RGB_3-Pin" H 5900 3350 50  0001 C CNN
+F 3 "~" H 5900 3350 50  0001 C CNN
+	1    5900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 608FFD0E
+P 5450 3000
+F 0 "C3" V 5221 3000 50  0000 C CNN
+F 1 "1000nF" V 5312 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 3000 50  0001 C CNN
+F 3 "~" H 5450 3000 50  0001 C CNN
+	1    5450 3000
+	-1   0    0    1   
+$EndComp
+Text Label 5100 6550 0    50   ~ 0
+B1
+Text Label 5100 6150 0    50   ~ 0
+B2
+Text Label 5100 5750 0    50   ~ 0
+B3
+Text Label 5100 5350 0    50   ~ 0
+B4
+Text Label 5100 4950 0    50   ~ 0
+B5
+Text Label 5100 4550 0    50   ~ 0
+B6
+Text Label 5100 4150 0    50   ~ 0
+B7
+Text Label 5100 3750 0    50   ~ 0
+B8
+Wire Wire Line
+	5700 5750 5100 5750
+Wire Wire Line
+	5100 5350 5700 5350
+Wire Wire Line
+	5100 4950 5700 4950
+Wire Wire Line
+	5700 4550 5100 4550
+Wire Wire Line
+	5700 4150 5100 4150
+Wire Wire Line
+	5700 3750 5100 3750
+Wire Wire Line
+	5100 3350 5700 3350
+Entry Wire Line
+	5000 5650 5100 5750
+Entry Wire Line
+	5000 5250 5100 5350
+Entry Wire Line
+	5000 4850 5100 4950
+Entry Wire Line
+	5000 4450 5100 4550
+Entry Wire Line
+	5000 4050 5100 4150
+Entry Wire Line
+	5000 3250 5100 3350
+Entry Wire Line
+	5000 2850 5100 2950
+Wire Wire Line
+	5300 5650 5450 5650
+Wire Wire Line
+	5700 5250 5450 5250
+Connection ~ 5300 5250
+Wire Wire Line
+	5300 5250 5300 5650
+Wire Wire Line
+	5700 4850 5450 4850
+Connection ~ 5300 4850
+Wire Wire Line
+	5300 4850 5300 5250
+Wire Wire Line
+	5700 4450 5450 4450
+Wire Wire Line
+	5300 2500 5300 2850
+Connection ~ 5300 4450
+Wire Wire Line
+	5300 4450 5300 4850
+Connection ~ 5300 4050
+Wire Wire Line
+	5300 4050 5300 4450
+Wire Wire Line
+	5700 3650 5450 3650
+Connection ~ 5300 3650
+Wire Wire Line
+	5300 3650 5300 4050
+Wire Wire Line
+	5700 3250 5450 3250
+Connection ~ 5300 3250
+Wire Wire Line
+	5300 3250 5300 3650
+Connection ~ 5300 2850
+Wire Wire Line
+	5300 2850 5300 3250
+Wire Wire Line
+	5200 2600 5200 3100
+Wire Wire Line
+	5200 5900 5450 5900
+Connection ~ 5200 3100
+Wire Wire Line
+	5200 3100 5200 3500
+Wire Wire Line
+	5700 3500 5450 3500
+Connection ~ 5200 3500
+Wire Wire Line
+	5200 3500 5200 3900
+Wire Wire Line
+	5700 3900 5450 3900
+Connection ~ 5200 3900
+Wire Wire Line
+	5200 3900 5200 4300
+Wire Wire Line
+	5700 4300 5450 4300
+Connection ~ 5200 4300
+Wire Wire Line
+	5200 4300 5200 4700
+Wire Wire Line
+	5700 4700 5450 4700
+Connection ~ 5200 4700
+Wire Wire Line
+	5200 4700 5200 5100
+Wire Wire Line
+	5700 5100 5450 5100
+Connection ~ 5200 5100
+Wire Wire Line
+	5200 5100 5200 5500
+Wire Wire Line
+	5700 5500 5450 5500
+Connection ~ 5200 5500
+Wire Wire Line
+	5200 5500 5200 5900
+Wire Wire Line
+	5300 4050 5450 4050
+Wire Wire Line
+	5450 6700 5700 6700
+Connection ~ 5450 6700
+$Comp
+L Device:C_Small C12
+U 1 1 60A416E5
+P 5450 6600
+F 0 "C12" V 5221 6600 50  0000 C CNN
+F 1 "1000nF" V 5312 6600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 6600 50  0001 C CNN
+F 3 "~" H 5450 6600 50  0001 C CNN
+	1    5450 6600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 6300 5200 6300
+Connection ~ 5450 6300
+$Comp
+L Device:C_Small C11
+U 1 1 60A416F1
+P 5450 6200
+F 0 "C11" V 5221 6200 50  0000 C CNN
+F 1 "1000nF" V 5312 6200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 6200 50  0001 C CNN
+F 3 "~" H 5450 6200 50  0001 C CNN
+	1    5450 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L local:RGB_3_pin J10
+U 1 1 60A416FB
+P 5900 6550
+F 0 "J10" H 5980 6567 50  0000 L CNN
+F 1 "RGB_3_pin" H 5980 6476 50  0000 L CNN
+F 2 "local:RGB_3-Pin" H 5900 6550 50  0001 C CNN
+F 3 "~" H 5900 6550 50  0001 C CNN
+	1    5900 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L local:RGB_3_pin J9
+U 1 1 60A41705
+P 5900 6150
+F 0 "J9" H 5980 6167 50  0000 L CNN
+F 1 "RGB_3_pin" H 5980 6076 50  0000 L CNN
+F 2 "local:RGB_3-Pin" H 5900 6150 50  0001 C CNN
+F 3 "~" H 5900 6150 50  0001 C CNN
+	1    5900 6150
+	1    0    0    -1  
+$EndComp
+Text Label 5100 3350 0    50   ~ 0
+B9
+Entry Wire Line
+	5000 6450 5100 6550
+Entry Wire Line
+	5000 6050 5100 6150
+Wire Wire Line
+	5300 6450 5450 6450
+Wire Wire Line
+	5700 6050 5450 6050
+Connection ~ 5300 6050
+Wire Wire Line
+	5300 6050 5300 6450
+Wire Wire Line
+	5300 5650 5300 6050
+Wire Wire Line
+	5200 6700 5450 6700
+Wire Wire Line
+	5200 5900 5200 6300
+Wire Wire Line
+	5700 6300 5450 6300
+Connection ~ 5200 6300
+Wire Wire Line
+	5200 6300 5200 6700
+Connection ~ 5200 5900
+Connection ~ 5300 5650
+Wire Wire Line
+	5100 6150 5700 6150
+Text Label 5100 2950 0    50   ~ 0
+B10
+NoConn ~ 3650 5500
+NoConn ~ 3650 5600
+NoConn ~ 3650 5700
+NoConn ~ 3650 5800
+NoConn ~ 3650 5900
+NoConn ~ 3650 6000
+NoConn ~ 4650 6100
+NoConn ~ 4650 6000
+NoConn ~ 4650 5900
+NoConn ~ 4650 5800
+NoConn ~ 4650 5700
+NoConn ~ 4650 5600
+Wire Wire Line
+	5450 3700 5450 3650
+Connection ~ 5450 3650
+Wire Wire Line
+	5450 3650 5300 3650
+Wire Wire Line
+	5450 4100 5450 4050
+Connection ~ 5450 4050
+Wire Wire Line
+	5450 4050 5700 4050
+Wire Wire Line
+	5450 4500 5450 4450
+Connection ~ 5450 4450
+Wire Wire Line
+	5450 4450 5300 4450
+Wire Wire Line
+	5450 4900 5450 4850
+Connection ~ 5450 4850
+Wire Wire Line
+	5450 4850 5300 4850
+Wire Wire Line
+	5450 5300 5450 5250
+Connection ~ 5450 5250
+Wire Wire Line
+	5450 5250 5300 5250
+Wire Wire Line
+	5450 5700 5450 5650
+Connection ~ 5450 5650
+Wire Wire Line
+	5450 5650 5700 5650
+Wire Wire Line
+	5450 6100 5450 6050
+Connection ~ 5450 6050
+Wire Wire Line
+	5450 6050 5300 6050
+Wire Wire Line
+	5450 6500 5450 6450
+Connection ~ 5450 6450
+Wire Wire Line
+	5450 6450 5700 6450
+Entry Wire Line
+	4900 3600 5000 3700
+Wire Wire Line
+	5700 6550 5100 6550
+Entry Wire Line
+	5000 3650 5100 3750
 Wire Bus Line
-	5000 2800 5000 5800
+	5000 2800 5000 6500
 Wire Bus Line
-	3250 3850 3250 5700
+	3250 3000 3250 5700
 $EndSCHEMATC
