@@ -1,6 +1,8 @@
 # RGB-controller
 A 10-channel RGB controller based on the ESP32 microcontroller
 
+**Important:** I have successfully ordered and assembled this project, but since then I altered the 47uF capacitor package so that it is not an extended part at JLCPCB. The author accepts NO RESPONSIBILITY for this product working, and it has not undergone extensive safety testing. Use at your own risk.
+
 ![Opened finished build](images/20210603_153314.jpg)
 ![Finished with top plate](images/20210603_153548.jpg)
 ![PCB layout](images/kicad_uQ1e10VDzU.png)
