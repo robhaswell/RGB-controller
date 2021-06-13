@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\rob\OneDrive\Documents\Projects\RGB-controller\Controller.sch</source>
+    <date>22/03/2021 14:05:37</date>
+    <tool>Eeschema (5.1.9)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Controller.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>ESP32_DevKit_V1_DOIT</value>
+      <footprint>local:esp32_devkit_v1_doit</footprint>
+      <datasheet>https://aliexpress.com/item/32864722159.html</datasheet>
+      <libsource lib="local" part="ESP32_DevKit_V1_DOIT" description="32-bit microcontroller module with WiFi and Bluetooth"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60562DD0</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>RGB_3_pin</value>
+      <footprint>local:RGB_3-Pin</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="local" part="RGB_3_pin" description="3-pin ARGB header"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60599B6D</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>RGB_3_pin</value>
+      <footprint>local:RGB_3-Pin</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="local" part="RGB_3_pin" description="3-pin ARGB header"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60599B63</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>RGB_3_pin</value>
+      <footprint>local:RGB_3-Pin</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="local" part="RGB_3_pin" description="3-pin ARGB header"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60599B59</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>RGB_3_pin</value>
+      <footprint>local:RGB_3-Pin</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="local" part="RGB_3_pin" description="3-pin ARGB header"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60599A4B</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>RGB_3_pin</value>
+      <footprint>local:RGB_3-Pin</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="local" part="RGB_3_pin" description="3-pin ARGB header"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60595F15</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>RGB_3_pin</value>
+      <footprint>local:RGB_3-Pin</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="local" part="RGB_3_pin" description="3-pin ARGB header"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60595E37</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>RGB_3_pin</value>
+      <footprint>local:RGB_3-Pin</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="local" part="RGB_3_pin" description="3-pin ARGB header"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60595303</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>RGB_3_pin</value>
+      <footprint>local:RGB_3-Pin</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="local" part="RGB_3_pin" description="3-pin ARGB header"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60583046</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>AMP_Mate-N-Lok_Power</value>
+      <footprint>Connector_TE-Connectivity:TE_MATE-N-LOK_1-794374-x_1x01_P4.14mm_Horizontal</footprint>
+      <datasheet>http://uk.rs-online.com/web/p/products/0471430</datasheet>
+      <fields>
+        <field name="Description">Pin &amp; Socket Connectors CONN PCM 4 POS TIN</field>
+        <field name="Height">10.29</field>
+        <field name="Manufacturer_Name">TE Connectivity</field>
+        <field name="Manufacturer_Part_Number">350211-1</field>
+        <field name="RS Part Number">0471430</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/0471430</field>
+      </fields>
+      <libsource lib="local" part="AMP_Mate-N-Lok_Power" description="Pin &amp; Socket Connectors CONN PCM 4 POS TIN"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>605872F5</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6056E5FB</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6056FCE4</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>605873F3</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>605875BF</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>605A4D67</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>SN74HCT245PWR</value>
+      <footprint>Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</footprint>
+      <datasheet>http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hct245</datasheet>
+      <fields>
+        <field name="Arrow Part Number">SN74HCT245PWR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/sn74hct245pwr/texas-instruments</field>
+        <field name="Description">Octal Bus Transceivers With 3-State Outputs</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">SN74HCT245PWR</field>
+        <field name="Mouser Part Number">595-SN74HCT245PWR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74HCT245PWR?qs=pt%2FIv5r0EPdWdXnOChoseA%3D%3D</field>
+      </fields>
+      <libsource lib="local" part="SN74HCT245PWR" description="Octal Bus Transceivers With 3-State Outputs"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>605EB202</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="local" part="AMP_Mate-N-Lok_Power">
+      <description>Pin &amp; Socket Connectors CONN PCM 4 POS TIN</description>
+      <docs>http://uk.rs-online.com/web/p/products/0471430</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">AMP_Mate-N-Lok_Power</field>
+        <field name="Footprint">3502111</field>
+        <field name="Datasheet">http://uk.rs-online.com/web/p/products/0471430</field>
+        <field name="Description">Pin &amp; Socket Connectors CONN PCM 4 POS TIN</field>
+        <field name="Height">10.29</field>
+        <field name="RS Part Number">0471430</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/0471430</field>
+        <field name="Manufacturer_Name">TE Connectivity</field>
+        <field name="Manufacturer_Part_Number">350211-1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="local" part="ESP32_DevKit_V1_DOIT">
+      <description>32-bit microcontroller module with WiFi and Bluetooth</description>
+      <docs>https://aliexpress.com/item/32864722159.html</docs>
+      <footprints>
+        <fp>esp32?devkit?v1?doit*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32_DevKit_V1_DOIT</field>
+        <field name="Footprint">ESP32_DevKit_V1_DOIT:esp32_devkit_v1_doit</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="2" name="SENSOR_VP" type="input"/>
+        <pin num="3" name="SENSOR_VN" type="input"/>
+        <pin num="4" name="IO34" type="input"/>
+        <pin num="5" name="IO35" type="input"/>
+        <pin num="6" name="IO32" type="BiDi"/>
+        <pin num="7" name="IO33" type="BiDi"/>
+        <pin num="8" name="IO25" type="BiDi"/>
+        <pin num="9" name="IO26" type="BiDi"/>
+        <pin num="10" name="IO27" type="BiDi"/>
+        <pin num="11" name="IO14" type="BiDi"/>
+        <pin num="12" name="IO12" type="BiDi"/>
+        <pin num="13" name="IO13" type="BiDi"/>
+        <pin num="14" name="GND" type="power_in"/>
+        <pin num="15" name="VIN" type="power_in"/>
+        <pin num="16" name="3V3" type="power_in"/>
+        <pin num="17" name="GND" type="power_in"/>
+        <pin num="18" name="IO15" type="BiDi"/>
+        <pin num="19" name="IO2" type="BiDi"/>
+        <pin num="20" name="IO4" type="BiDi"/>
+        <pin num="21" name="IO16" type="BiDi"/>
+        <pin num="22" name="IO17" type="BiDi"/>
+        <pin num="23" name="IO5" type="BiDi"/>
+        <pin num="24" name="IO18" type="BiDi"/>
+        <pin num="25" name="IO19" type="BiDi"/>
+        <pin num="26" name="IO21" type="BiDi"/>
+        <pin num="27" name="RXD0/IO3" type="BiDi"/>
+        <pin num="28" name="TXD0/IO1" type="BiDi"/>
+        <pin num="29" name="IO22" type="BiDi"/>
+        <pin num="30" name="IO23" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="local" part="RGB_3_pin">
+      <description>3-pin ARGB header</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">RGB_3_pin</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="local" part="SN74HCT245PWR">
+      <description>Octal Bus Transceivers With 3-State Outputs</description>
+      <docs>http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hct245</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">SN74HCT245PWR</field>
+        <field name="Footprint">SOP65P640X120-20N</field>
+        <field name="Datasheet">http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hct245</field>
+        <field name="Description">Octal Bus Transceivers With 3-State Outputs</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">SN74HCT245PWR</field>
+        <field name="Mouser Part Number">595-SN74HCT245PWR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74HCT245PWR?qs=pt%2FIv5r0EPdWdXnOChoseA%3D%3D</field>
+        <field name="Arrow Part Number">SN74HCT245PWR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/sn74hct245pwr/texas-instruments</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DIR" type="passive"/>
+        <pin num="2" name="A1" type="passive"/>
+        <pin num="3" name="A2" type="passive"/>
+        <pin num="4" name="A3" type="passive"/>
+        <pin num="5" name="A4" type="passive"/>
+        <pin num="6" name="A5" type="passive"/>
+        <pin num="7" name="A6" type="passive"/>
+        <pin num="8" name="A7" type="passive"/>
+        <pin num="9" name="A8" type="passive"/>
+        <pin num="10" name="GND" type="passive"/>
+        <pin num="11" name="B8" type="passive"/>
+        <pin num="12" name="B7" type="passive"/>
+        <pin num="13" name="B6" type="passive"/>
+        <pin num="14" name="B5" type="passive"/>
+        <pin num="15" name="B4" type="passive"/>
+        <pin num="16" name="B3" type="passive"/>
+        <pin num="17" name="B2" type="passive"/>
+        <pin num="18" name="B1" type="passive"/>
+        <pin num="19" name="~OE" type="passive"/>
+        <pin num="20" name="VCC" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Mechanical.lib</uri>
+    </library>
+    <library logical="local">
+      <uri>C:\Users\rob\OneDrive\Documents\Projects\RGB-controller/library/local.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/B7">
+      <node ref="IC1" pin="12"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="2" name="/B8">
+      <node ref="J1" pin="2"/>
+      <node ref="IC1" pin="11"/>
+    </net>
+    <net code="3" name="/B1">
+      <node ref="J8" pin="2"/>
+      <node ref="IC1" pin="18"/>
+    </net>
+    <net code="4" name="/B6">
+      <node ref="J3" pin="2"/>
+      <node ref="IC1" pin="13"/>
+    </net>
+    <net code="5" name="/B5">
+      <node ref="IC1" pin="14"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="6" name="/B4">
+      <node ref="IC1" pin="15"/>
+      <node ref="J5" pin="2"/>
+    </net>
+    <net code="7" name="+12V">
+      <node ref="U1" pin="15"/>
+      <node ref="J9" pin="1"/>
+    </net>
+    <net code="8" name="/A8">
+      <node ref="U1" pin="13"/>
+      <node ref="IC1" pin="9"/>
+    </net>
+    <net code="9" name="/A6">
+      <node ref="U1" pin="11"/>
+      <node ref="IC1" pin="7"/>
+    </net>
+    <net code="10" name="/A3">
+      <node ref="U1" pin="8"/>
+      <node ref="IC1" pin="4"/>
+    </net>
+    <net code="11" name="/A4">
+      <node ref="IC1" pin="5"/>
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="12" name="/A5">
+      <node ref="IC1" pin="6"/>
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="13" name="/A1">
+      <node ref="U1" pin="6"/>
+      <node ref="IC1" pin="2"/>
+    </net>
+    <net code="14" name="/A7">
+      <node ref="U1" pin="12"/>
+      <node ref="IC1" pin="8"/>
+    </net>
+    <net code="15" name="/A2">
+      <node ref="U1" pin="7"/>
+      <node ref="IC1" pin="3"/>
+    </net>
+    <net code="16" name="/B3">
+      <node ref="J6" pin="2"/>
+      <node ref="IC1" pin="16"/>
+    </net>
+    <net code="17" name="/B2">
+      <node ref="J7" pin="2"/>
+      <node ref="IC1" pin="17"/>
+    </net>
+    <net code="18" name="Net-(U1-Pad22)">
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="19" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="20" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="21" name="Net-(U1-Pad30)">
+      <node ref="U1" pin="30"/>
+    </net>
+    <net code="22" name="Net-(U1-Pad29)">
+      <node ref="U1" pin="29"/>
+    </net>
+    <net code="23" name="Net-(U1-Pad26)">
+      <node ref="U1" pin="26"/>
+    </net>
+    <net code="24" name="Net-(U1-Pad25)">
+      <node ref="U1" pin="25"/>
+    </net>
+    <net code="25" name="Net-(U1-Pad24)">
+      <node ref="U1" pin="24"/>
+    </net>
+    <net code="26" name="Net-(U1-Pad21)">
+      <node ref="U1" pin="21"/>
+    </net>
+    <net code="27" name="Net-(U1-Pad18)">
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="28" name="Net-(U1-Pad23)">
+      <node ref="U1" pin="23"/>
+    </net>
+    <net code="29" name="Net-(U1-Pad20)">
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="30" name="Net-(U1-Pad27)">
+      <node ref="U1" pin="27"/>
+    </net>
+    <net code="31" name="Net-(U1-Pad19)">
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="32" name="Net-(U1-Pad28)">
+      <node ref="U1" pin="28"/>
+    </net>
+    <net code="33" name="Net-(U1-Pad16)">
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="34" name="Net-(U1-Pad2)">
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="35" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="36" name="Net-(U1-Pad1)">
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="37" name="GND">
+      <node ref="J7" pin="3"/>
+      <node ref="J9" pin="3"/>
+      <node ref="J8" pin="3"/>
+      <node ref="IC1" pin="19"/>
+      <node ref="J6" pin="3"/>
+      <node ref="J1" pin="3"/>
+      <node ref="J2" pin="3"/>
+      <node ref="J3" pin="3"/>
+      <node ref="J4" pin="3"/>
+      <node ref="J5" pin="3"/>
+      <node ref="J9" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="U1" pin="17"/>
+      <node ref="IC1" pin="10"/>
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="38" name="+5V">
+      <node ref="IC1" pin="20"/>
+      <node ref="J9" pin="4"/>
+      <node ref="IC1" pin="1"/>
+      <node ref="J6" pin="1"/>
+      <node ref="J7" pin="1"/>
+      <node ref="J8" pin="1"/>
+      <node ref="J5" pin="1"/>
+      <node ref="J4" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="C1" pin="1"/>
+    </net>
+  </nets>
+</export>
