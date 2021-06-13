@@ -784,7 +784,7 @@ U 1 1 60A3BB1A
 P 2750 2900
 F 0 "C4" V 2521 2900 50  0000 C CNN
 F 1 "47uF" V 2612 2900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2750 2900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2750 2900 50  0001 C CNN
 F 3 "~" H 2750 2900 50  0001 C CNN
 	1    2750 2900
 	0    -1   -1   0   
@@ -815,10 +815,6 @@ Wire Wire Line
 Wire Wire Line
 	2650 2800 2850 2800
 NoConn ~ 3400 1850
-Wire Bus Line
-	5000 2800 5000 6500
-Wire Bus Line
-	3250 3000 3250 5700
 $Comp
 L Mechanical:MountingHole H5
 U 1 1 60A6C1A7
@@ -841,4 +837,8 @@ F 3 "~" H 6450 1700 50  0001 C CNN
 	1    6450 1700
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	5000 2800 5000 6500
+Wire Bus Line
+	3250 3000 3250 5700
 $EndSCHEMATC
