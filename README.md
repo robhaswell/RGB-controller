@@ -17,7 +17,7 @@ To order the PCB at [JLCPCB](https://jlcpcb.com) you will need to do the followi
     2. Remove Order Number: Specify a location
 3. Enable SMT Assembly and choose:
     1. Top side
-    2. SMT QTY: 2
+    2. SMT QTY: 2 or 5 depending on your needs.
     3. Tooling holes: Added by Customer
 4. Confirm
 5. Upload files:
