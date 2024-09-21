@@ -37,7 +37,7 @@ Final discounts will be applied right before you pay, including free SMT Assembl
 Component | Quantity | Link
 -|-|-
 ESP32 Devkit v1 (DOIT) | 1 | https://www.aliexpress.com/item/1005001648850998.html
-4-pin RGB needle adapter | 10 | https://www.aliexpress.com/item/32948400198.html
+3-pin RGB needle adapter | 10 | https://www.aliexpress.com/item/1005005743425681.html
 350211-1 Mate-N-Lok connector | 1 | Find these locally - search "350211-1" at your local electronics store, or check Ebay sellers in your area. You may know this better as a "Molex connector".
 M2 standoff, 4mm, male-female | 12 or 20 | https://www.aliexpress.com/item/1005002542327479.html?spm=a2g0o.productlist.0.0.9c1c7ed6qyouL8&aem_p4p_detail=202106131120581657595816822930013487928 or locally. Order 20 if not using screws (see next).
 Optional: M2 screws and nuts | 4 | You can also find these on Aliexpress, or with the above spacers in kits on Amazon, etc. To keep costs down you can use use 20 male-female standoffs, but screws + nuts (or 4x female-female standoffs) will be neater.
